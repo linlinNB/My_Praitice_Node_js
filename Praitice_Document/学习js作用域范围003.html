@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+    auother : Mr_林小贱
+    type : Praitice_Vue.js
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="foo()">
+
+<script type="text/javascript">
+    var foo = function () {
+        var bar = function () {
+            var local = '我就是 bar函数中的 闭包'
+            return function () {
+                return local
+            }
+        }
+        var test = bar()
+        console.log(test())
+    }
+</script>
+
+</body>
+</html>

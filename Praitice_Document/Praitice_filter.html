@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+    auother : Mr_林小贱
+    type : Praitice_Vue.js
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body onload="foo()">
+
+<script type="text/javascript">
+    var foo = function () {
+        var local = 'local var'
+        var bar = function () {
+            /*var local = 'another var'*/
+            var baz = function () {
+                console.log(local)
+            }
+            baz()
+        }
+        bar()
+    }
+    foo()
+</script>
+
+</body>
+</html>
